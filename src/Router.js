@@ -6,13 +6,15 @@ import Listing from './containers/Listing'
 import Login from './containers/Login'
 import Add from './containers/Add'
 
-const UsernameContext = React.createContext('');
+// const UsernameContext = React.createContext('');
 
-const onUsernameChange = (username) => {
-    this.setState({ 
-      username: username
-    });
-  }
+// const onUsernameChange = (username) => {
+//     this.setState({ 
+//       username: username
+//     });
+//   }
+
+// currently workig 
 
 
 const Router = () => {
@@ -40,8 +42,8 @@ const checkAuth = () => {
       
       <Route exact path="/" component={Listings}/>
       <Route path="/listing/:id" component={Listing}/>
-      <Route path="/login" component={Login} onUsernameChange={this.onUsernameChange}/>
-      <Route path="/account" component={Account} username={this.state.username} />} />
+      <Route path="/login" component={Login}/>
+      {/* <Route path="/account" component={Account} username={this.state.username} />} /> */}
       <ProtectedRoute path="/add" component={Add}/>
     </Switch>
    

@@ -49,9 +49,7 @@ const user = JSON.parse(localStorage.getItem('user'));
           )}
         </ul>
       </Toolbar>
-      <div>
-        <h2>Welcome, {user.username}!</h2>
-      </div>
+      
     </AppBar>
   )
 }

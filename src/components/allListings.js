@@ -6,6 +6,12 @@ import { Link } from 'react-router-dom'
 const Listings = (props) => {
   return (
     <Container maxWidth="lg" className="listing-container">
+      {document.cookie == "loggedIn=true" ? (
+      <div>
+        <h2>Welcome, currently working on this :(</h2>
+      {/* currently working on passing username from login page here */}
+      </div>
+      ):(null)}
       <Table>
         <TableHead>
           <TableRow>
