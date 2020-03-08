@@ -4,11 +4,14 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import { Link } from 'react-router-dom'
 
 const Listings = (props) => {
+
+
+
   return (
     <Container maxWidth="lg" className="listing-container">
       {document.cookie == "loggedIn=true" ? (
       <div>
-        <h2>Welcome, currently working on this :(</h2>
+        <h2>Welcome, Username</h2>
       {/* currently working on passing username from login page here */}
       </div>
       ):(null)}
@@ -26,7 +29,7 @@ const Listings = (props) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {console.log(props.listings)}
+         
         {props.listings.map((listing, index) => (
           <TableRow key={listing.id}>
             <TableCell component="th" scope="row">

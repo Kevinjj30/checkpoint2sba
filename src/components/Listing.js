@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Paper, Chip } from '@material-ui/core';
+import { Container} from '@material-ui/core';
 import GoogleMapReact from "google-map-react";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>
@@ -7,6 +7,7 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>
 const Listing = (props) => {
   const id = props.match.params.id
   const listing = props.listings.find(c => c.id == id)
+  
 
   // const defaultProps = {
   //   center: {

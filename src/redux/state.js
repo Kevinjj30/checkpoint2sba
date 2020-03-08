@@ -1,13 +1,16 @@
   
 export default {
-  
+  user: {
+    username: '',
+},
+
 listings: [
       {
         "id": 1,
         "name": "Another Season Consignments",
         "address": " 617 Lake Air Dr, Waco, TX 76710",
         "hours": "Su: Closed; Mon-Sa: 10am-6pm",
-        "description": "Sell your Clothes Here!",
+        "description": "Cosign your Clothes Here!",
         
       }
    

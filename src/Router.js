@@ -43,7 +43,7 @@ const checkAuth = () => {
       <Route exact path="/" component={Listings}/>
       <Route path="/listing/:id" component={Listing}/>
       <Route path="/login" component={Login}/>
-      {/* <Route path="/account" component={Account} username={this.state.username} />} /> */}
+     
       <ProtectedRoute path="/add" component={Add}/>
     </Switch>
    
